@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using PersonDB_project;
 using PersonDB_project.Models;
 
-namespace EntityRepository
+namespace EntityRepo
 {
-    class EntityRepository : IRepository<User>
+    public class EntityRepository : IRepository<User>
     {
         EntityUserContext db = new EntityUserContext();
 
