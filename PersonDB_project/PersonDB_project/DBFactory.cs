@@ -20,10 +20,17 @@ namespace PersonDB_project
                         repository = new EntityRepository();
                         break;
                     }
+                default:
+                    {
+                        repository = new EntityRepository();
+                        break;
+                    }
             }
 
 
-            return null;
+            return repository;
         }
+
+       
     }
 }

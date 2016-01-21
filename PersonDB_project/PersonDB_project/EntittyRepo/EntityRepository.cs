@@ -40,6 +40,14 @@ namespace EntityRepo
         public void Update(User item)
         {
             db.Entry<User>(item).State = System.Data.Entity.EntityState.Modified;
+            int Id = item.Id;
+            User user = GetById(Id);
+         
+            user.FirstName = item.FirstName;
+            user.LastName = item.LastName;
+            user.Age = item.Age;
+
+            db.SaveChanges();
         }
     }
 }

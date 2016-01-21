@@ -81,4 +81,3 @@ C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\bin\EntityFramework.dll
 C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\bin\EntityFramework.SqlServer.dll
 C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\bin\EntityFramework.xml
 C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\bin\EntityFramework.SqlServer.xml
-C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\obj\Debug\PersonDB_project.csprojResolveAssemblyReference.cache
