@@ -20,6 +20,11 @@ namespace PersonDB_project
                         repository = new EntityRepository();
                         break;
                     }
+                case "Ado":
+                    {
+                        repository = new AdoRepo.AdoNetRepository(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='C:\Git\MVC_personDB\PersonDB_project\PersonDB_project\App_Data\EntityRepo.EntityUserContext.mdf';Integrated Security=True");
+                        break;
+                    }
                 default:
                     {
                         repository = new EntityRepository();

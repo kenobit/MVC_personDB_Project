@@ -33,3 +33,7 @@ C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\System.Web.WebPa
 C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\obj\Debug\AdoNetRepository.dll
 C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\obj\Debug\AdoNetRepository.pdb
+C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Git\MVC_personDB\PersonDB_project\AdoNetRepository\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml

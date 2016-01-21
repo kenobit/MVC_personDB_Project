@@ -9,7 +9,7 @@ namespace PersonDB_project.Controllers
 {
     public class UserController : Controller
     {
-        IRepository<User> repository = new DBFactory().GetInstance("Entity");
+        IRepository<User> repository = new DBFactory().GetInstance("Ado");
 
         //repo = factory.GetInstance("Entity");
 
@@ -62,7 +62,7 @@ namespace PersonDB_project.Controllers
             }
             catch
             {
-                return View();
+               return View();
             }
         }
 
