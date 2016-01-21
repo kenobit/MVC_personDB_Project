@@ -16,7 +16,7 @@ namespace PersonDB_project
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "User", action = "MultiIndex", id = UrlParameter.Optional }
             );
         }
     }

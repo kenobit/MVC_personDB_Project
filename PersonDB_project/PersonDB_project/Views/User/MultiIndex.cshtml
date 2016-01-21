@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PersonDB_project.Models.User>
+
+@{
+    ViewBag.Title = "MultiIndex";
+}
+
+<h2>MultiIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr class="navbar-inverse text-success">
+        <th class="hidden">
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+<th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("Edit","User"))
+        {
+            @Html.AntiForgeryToken()
+            <tr>
+                <td class="hidden">
+                    @Html.TextBoxFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.TextBoxFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(modelItem => item.Age)
+                </td>
+                <td>
+                    <input type="submit" value="Save" class="btn btn-success" />
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    }
+
+</table>

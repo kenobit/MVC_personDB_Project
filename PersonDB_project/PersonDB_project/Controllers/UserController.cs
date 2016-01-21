@@ -11,19 +11,15 @@ namespace PersonDB_project.Controllers
     {
         IRepository<User> repository = new DBFactory().GetInstance("Ado");
 
-        //repo = factory.GetInstance("Entity");
-
-        // GET: User
-        public ActionResult Index()
-        {
-            return View(repository.GetAll());
-        }
-
         // GET: User/Details/5
         public ActionResult Details(int id)
         {
             User user = repository.GetById(id);
             return View(user);
+        }
+        public ActionResult MultiIndex()
+        {
+            return View(repository.GetAll());
         }
 
         [HttpGet]
