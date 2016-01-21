@@ -76,6 +76,8 @@ namespace PersonDB_project.AdoRepo
                 _sqlDB.AddInParameter(sqlCmd, "Age", DbType.Int32, user.Age);
                 _sqlDB.AddInParameter(sqlCmd, "FirstName", DbType.String, user.FirstName);
                 _sqlDB.AddInParameter(sqlCmd, "LastName", DbType.String, user.LastName);
+                _sqlDB.AddInParameter(sqlCmd, "Id", DbType.String, user.Id);
+
                 using (_sqlDB.ExecuteReader(sqlCmd))
                 {
                     return;

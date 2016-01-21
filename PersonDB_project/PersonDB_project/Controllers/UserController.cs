@@ -22,7 +22,8 @@ namespace PersonDB_project.Controllers
         // GET: User/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            User user = repository.GetById(id);
+            return View(user);
         }
 
         [HttpGet]
@@ -51,19 +52,19 @@ namespace PersonDB_project.Controllers
         [HttpPost]
         public ActionResult Edit(User item)
         {
-            try
-            {
+            //try
+            //{
                 
                                 
                 repository.Update(item);
                 repository.Save();
 
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-               return View();
-            }
+            //}
+            //catch
+            //{
+            //   return View(item);
+            //}
         }
 
         // GET: User/Delete/5
